@@ -1,0 +1,19 @@
+	/* 체크박스 전체 동의 및 해제 */
+	$(document).ready(function(){
+		$("#cbox").click(function(){
+			var cVal = $('input:checkbox[id="cbox"]').is(":checked");
+			if(cVal == true){
+			$("#li1box").prop("checked", true);
+			$('input:checkbox[id="li2box"]').prop("checked", true);
+			$('input:checkbox[id="li3box"]').prop("checked", true);
+			$('input:checkbox[id="li4box"]').prop("checked", true);
+		
+			} else if(cVal == false){
+			$('input:checkbox[id="li1box"]').prop("checked", false);
+			$('input:checkbox[id="li2box"]').prop("checked", false);
+			$('input:checkbox[id="li3box"]').prop("checked", false);
+			$('input:checkbox[id="li4box"]').prop("checked", false);
+		
+		}
+		
+	});
